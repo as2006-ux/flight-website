@@ -7,7 +7,7 @@ import pandas as pd
 from flask import Flask, jsonify, request
 
 BASE = Path(__file__).parent
-app = Flask(__name__, static_folder=str(BASE.parent / "frontend"), static_url_path="")
+app = Flask(__name__, static_folder=str(BASE), static_url_path="")
 RESULTS = json.loads((BASE / "results.json").read_text())
 COLS = ["MONTH", "DAY", "DAY_OF_WEEK", "SCHEDULED_DEPARTURE", "DISTANCE", "ARRIVAL_DELAY"]
 
