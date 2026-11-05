@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flight Delay Prediction System</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Flight Delay Prediction System</h1><p>Units 2–5: regression, classification, clustering and sequence models, written with NumPy. An experimental prototype.</p></header>
+<nav><a href="#predict">Try it</a><a href="#u2">Unit 2</a><a href="#u3">Unit 3</a><a href="#u4">Unit 4</a><a href="#limits">Limitations</a></nav>
+<main>
+<section id="predict"><h2>Estimate an arrival delay</h2>
+<form id="f"><label>Month<input name="month" type="number" min="1" max="12" value="7"></label>
+<label>Day<input name="day" type="number" min="1" max="31" value="15"></label>
+<label>Day of week (1 = Mon)<input name="day_of_week" type="number" min="1" max="7" value="5"></label>
+<label>Scheduled hour (0–23)<input name="hour" type="number" min="0" max="23" value="17"></label>
+<label>Distance (miles)<input name="distance" type="number" min="1" max="5000" value="800"></label>
+<button type="submit">Estimate delay</button></form>
+<p id="out" role="status"></p></section>
+<section id="u2"><h2>Unit 2: Regression and classification</h2><div id="reg"></div><div id="cls"></div></section>
+<section id="u3"><h2>Unit 3: Clustering and PCA</h2><div id="km"></div><p id="gmm"></p><div id="pca"></div></section>
+<section id="u4"><h2>Unit 4: Markov chain and HMM</h2><p id="hmm"></p><div id="tr"></div><div id="em"></div></section>
+<section id="limits"><h2>Limitations</h2><ul id="lim"></ul></section>
+</main>
+<script src="app.js"></script></body></html>

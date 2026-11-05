@@ -1,0 +1,11 @@
+{
+"regression":[{"model":"MLE / Least squares","mae":20.94,"rmse":39.02,"r2":0.0144},{"model":"Huber","mae":18.97,"rmse":40.15,"r2":-0.0434},{"model":"Ridge","mae":20.94,"rmse":39.02,"r2":0.0144},{"model":"Bayesian linear","mae":20.94,"rmse":39.02,"r2":0.0144}],
+"classification":[{"model":"Gaussian generative","accuracy":82.10,"precision":20.31,"recall":0.08,"f1":0.15},{"model":"Logistic regression","accuracy":82.14,"precision":0,"recall":0,"f1":0},{"model":"Bayesian logistic","accuracy":82.14,"precision":0,"recall":0,"f1":0},{"model":"RBF SVM (balanced 1,800-row subset)","accuracy":19.75,"precision":18.64,"recall":99.19,"f1":31.38}],
+"kmeans":[{"k":2,"inertia":26131.24,"silhouette":0.1284},{"k":3,"inertia":23686.95,"silhouette":0.1162},{"k":4,"inertia":21408.51,"silhouette":0.1335},{"k":5,"inertia":18773.88,"silhouette":0.1371}],
+"gmm":{"k":3,"log_likelihood":-38955.36,"iterations":77,"weights":[29.09,56.29,14.62],"silhouette":0.1597},
+"pca_variance":[18.98,17.13,17.08,16.53,15.85,14.43],
+"hmm":{"days":365,"train":292,"test":73,"markov_accuracy":63.89,"baum_welch_iterations":97,"train_loglik":-257.4677,"test_loglik":-73.006,"test_loglik_per_day":-1.0001,
+"transition":[[0.8148,0,0.1852],[0.0142,0.9803,0.0055],[0.2107,0.0474,0.742]],
+"emission":[[0,0.0538,0.9462],[0.6181,0.237,0.1449],[0.1909,0.8091,0]]},
+"limitations":["Experimental prototype, not a production predictor.","No cancellation model was built or evaluated.","The RBF SVM used a different training subset from the other classifiers.","HMM tertile cut points were computed on the full sequence before the split.","Clustering used 5,000 rows; hierarchical clustering used 300."]
+}
